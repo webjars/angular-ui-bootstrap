@@ -7,7 +7,6 @@ requirejs.config({
         'ui-bootstrap-tpls': webjars.path('angular-ui-bootstrap', 'ui-bootstrap-tpls')
     },
     shim: {
-        'ui-bootstrap': [ 'webjars!angular.js' ],
-        'ui-bootstrap-tpls': [ 'webjars!angular.js' ]
+        'ui-bootstrap': [ 'angular' ]
     }
 });

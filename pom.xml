@@ -29,7 +29,7 @@
                 },
                 "shim": {
                     "ui-bootstrap": [ "angular" ],
-                    "ui-bootstrap-tpls": [ 'angular" ]
+                    "ui-bootstrap-tpls": [ "angular" ]
                 }
             }
         </requirejs>

@@ -11,14 +11,14 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-ui-bootstrap</artifactId>
-    <version>0.11.0-4-SNAPSHOT</version>
+    <version>0.11.2-SNAPSHOT</version>
     <name>Angular Ui Bootstrap</name>
     <description>WebJar for Angular UI Bootstrap</description>
     <url>http://webjars.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <angularui.bootstrap.version>0.11.0</angularui.bootstrap.version>
+        <angularui.bootstrap.version>0.11.2</angularui.bootstrap.version>
         <angularui.bootstrap.sourceUrl>https://github.com/angular-ui/bootstrap/archive</angularui.bootstrap.sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>

@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-ui-bootstrap</artifactId>
-    <version>0.12.2-SNAPSHOT</version>
+    <version>0.12.1-1-SNAPSHOT</version>
     <name>Angular Ui Bootstrap</name>
     <description>WebJar for Angular UI Bootstrap</description>
     <url>http://webjars.org</url>
@@ -108,13 +108,13 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
-                                <echo message="moving resources" />
-                                <copy tofile="${destDir}/ui-bootstrap.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.js" />
-                                <copy tofile="${destDir}/ui-bootstrap.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.min.js" />
-                                <copy tofile="${destDir}/ui-bootstrap-tpls.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.js" />
-                                <copy tofile="${destDir}/ui-bootstrap-tpls.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.min.js" />
+                                <echo message="unzip archive"/>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
+                                <echo message="moving resources"/>
+                                <copy tofile="${destDir}/ui-bootstrap.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.js"/>
+                                <copy tofile="${destDir}/ui-bootstrap.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.min.js"/>
+                                <copy tofile="${destDir}/ui-bootstrap-tpls.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.js"/>
+                                <copy tofile="${destDir}/ui-bootstrap-tpls.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.min.js"/>
                             </target>
                         </configuration>
                     </execution>
@@ -123,7 +123,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
 		<plugin>
 			<groupId>com.googlecode.todomap</groupId>
@@ -146,7 +146,7 @@
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>

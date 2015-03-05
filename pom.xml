@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>angular-ui-bootstrap</artifactId>
-    <version>0.12.1-1-SNAPSHOT</version>
+    <version>0.12.1-1</version>
     <name>Angular Ui Bootstrap</name>
     <description>WebJar for Angular UI Bootstrap</description>
     <url>http://webjars.org</url>
@@ -66,7 +66,7 @@
         <url>https://github.com/webjars/angular-ui-bootstrap</url>
         <connection>scm:git:https://github.com/webjars/angular-ui-bootstrap.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/angular-ui-bootstrap.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>angular-ui-bootstrap-0.12.1-1</tag>
     </scm>
 
     <developers>
@@ -108,13 +108,13 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
-                                <copy tofile="${destDir}/ui-bootstrap.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.js"/>
-                                <copy tofile="${destDir}/ui-bootstrap.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.min.js"/>
-                                <copy tofile="${destDir}/ui-bootstrap-tpls.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.js"/>
-                                <copy tofile="${destDir}/ui-bootstrap-tpls.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.min.js"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
+                                <copy tofile="${destDir}/ui-bootstrap.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.js" />
+                                <copy tofile="${destDir}/ui-bootstrap.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-${angularui.bootstrap.version}.min.js" />
+                                <copy tofile="${destDir}/ui-bootstrap-tpls.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.js" />
+                                <copy tofile="${destDir}/ui-bootstrap-tpls.min.js" file="${project.build.directory}/bootstrap-gh-pages/ui-bootstrap-tpls-${angularui.bootstrap.version}.min.js" />
                             </target>
                         </configuration>
                     </execution>

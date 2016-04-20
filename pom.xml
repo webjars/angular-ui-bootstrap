@@ -18,7 +18,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <angularui.bootstrap.version>1.3.1</angularui.bootstrap.version>
+        <angularui.bootstrap.version>1.3.2</angularui.bootstrap.version>
         <angularui.bootstrap.sourceUrl>https://github.com/angular-ui/bootstrap/archive</angularui.bootstrap.sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
